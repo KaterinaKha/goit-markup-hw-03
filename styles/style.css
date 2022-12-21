@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 :root {
 	--main-color: #434455;
 	--title-color: #2e2f42;
@@ -31,6 +37,34 @@ body {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 1158px;
+	margin: 0 auto;
+}
+
+.header {
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 /* logo */
 .logo {
@@ -81,8 +115,16 @@ body {
 /* hero */
 .hero {
 	background-color: var(--title-color);
+	text-align: center;
 }
+
+.container.hero {
+	padding: 188px 318px;
+}
+
 .hero-title {
+	margin-bottom: 48px;
+
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
@@ -90,11 +132,17 @@ body {
 }
 
 .hero-btn {
+	display: inline-block;
+	border-radius: 4px;
+	min-width: 170px;
+	padding: 16px 32px;
+
 	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.04em;
+	text-align: center;
 
 	background-color: var(--primary-color);
 	color: var(--btn-text);
@@ -108,13 +156,30 @@ body {
 }
 
 /* section  */
+.section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.section.features {
+	padding-bottom: 0;
+}
+
+.section.filter {
+	padding-top: 96px;
+}
+
 .section.section-bg {
 	background-color: var(--light);
 }
+
 .section-item {
 	background-color: var(--accent-color);
 }
+
 .section-title {
+	margin-bottom: 72px;
+
 	font-size: 36px;
 	line-height: 1.11;
 	letter-spacing: 0.02em;
@@ -123,6 +188,8 @@ body {
 }
 
 .item-title {
+	margin-top: 32px;
+	margin-bottom: 8px;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
@@ -134,6 +201,12 @@ body {
 }
 
 .filter-btn {
+	display: inline-block;
+	border: 1px solid var(--secondary-accent);
+	border-radius: 4px;
+	padding: 12px 24px;
+	min-width: 69px;
+
 	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 	font-size: 16px;
@@ -143,20 +216,26 @@ body {
 	color: var(--primary-color);
 	background-color: var(--btn-color);
 
-	border: 1px solid var(--secondary-accent);
 	cursor: pointer;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
+	border: 1px solid transparent;
 	color: var(--btn-text);
 	background-color: var(--primary-color);
 }
 
 .footer {
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-color: var(--logo-bgc);
 }
 .footer-description {
+	margin-top: 16px;
+	text-align: justify;
+	width: 264px;
+
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--secondary-accent);
