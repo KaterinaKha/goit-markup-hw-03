@@ -55,6 +55,10 @@ ol {
 	padding: 0;
 }
 
+img {
+	display: block;
+}
+
 .list {
 	list-style: none;
 }
@@ -147,16 +151,16 @@ ol {
 
 /* hero */
 .hero {
+	padding-top: 188px;
+	padding-bottom: 188px;
 	background-color: var(--title-color);
 	text-align: center;
 }
 
-.container.hero {
-	padding: 188px 318px;
-}
-
 .hero-title {
-	padding-bottom: 48px;
+	max-width: 496px;
+	margin: 0 auto;
+	margin-bottom: 48px;
 
 	font-size: 56px;
 	line-height: 1.07;
@@ -166,7 +170,6 @@ ol {
 
 .hero-btn {
 	display: inline-block;
-	border-radius: 4px;
 	min-width: 170px;
 	padding: 16px 32px;
 
@@ -179,6 +182,7 @@ ol {
 
 	background-color: var(--primary-color);
 	color: var(--btn-text);
+	border-radius: 4px;
 	border: transparent;
 
 	cursor: pointer;
@@ -217,7 +221,7 @@ ol {
 }
 
 .section-title {
-	padding-bottom: 72px;
+	margin-bottom: 72px;
 	text-align: center;
 
 	font-size: 36px;
@@ -246,7 +250,7 @@ ol {
 }
 
 .item-title {
-	padding-bottom: 8px;
+	margin-bottom: 8px;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
@@ -259,6 +263,7 @@ ol {
 
 .filter-list {
 	display: flex;
+	margin-bottom: 72px;
 	justify-content: center;
 }
 
@@ -269,7 +274,6 @@ ol {
 .filter-btn {
 	display: inline-block;
 
-	margin-bottom: 72px;
 	padding: 12px 24px;
 	min-width: 69px;
 	border-radius: 4px;
@@ -305,6 +309,11 @@ ol {
 	width: calc((100% - 48px) / 3);
 }
 
+.portfolio .card{
+	border: 1px solid var(--secondary-accent);
+	border-top: none;
+}
+
 .card {
 	padding: 32px 16px;
 }
@@ -323,6 +332,11 @@ ol {
 	letter-spacing: 0.02em;
 	color: var(--secondary-accent);
 }
+
+.footer .logo{
+	padding: 0;
+}
+
 .footer .logo-studio {
 	color: var(--light);
 }
